@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace SomeWhat
+namespace SommeWhat.Views
 {
 	public partial class RootPage : ContentPage
 	{

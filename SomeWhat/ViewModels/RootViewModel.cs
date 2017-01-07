@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using GalaSoft.MvvmLight;
 
-namespace SomeWhat
+namespace SommeWhat.ViewModels
 {
 	public class RootViewModel : ViewModelBase
 	{

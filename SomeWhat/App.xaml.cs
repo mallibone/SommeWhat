@@ -1,6 +1,7 @@
-﻿using Xamarin.Forms;
+﻿using SommeWhat.Views;
+using Xamarin.Forms;
 
-namespace SomeWhat
+namespace SommeWhat
 {
 	public partial class App : Application
 	{

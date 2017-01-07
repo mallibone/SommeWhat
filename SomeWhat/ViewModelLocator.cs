@@ -1,8 +1,8 @@
-﻿using System;
-using GalaSoft.MvvmLight.Ioc;
+﻿using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
+using SommeWhat.ViewModels;
 
-namespace SomeWhat
+namespace SommeWhat
 {
 	public class ViewModelLocator
 	{

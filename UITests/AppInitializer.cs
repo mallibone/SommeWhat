@@ -1,10 +1,6 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using Xamarin.UITest;
-using Xamarin.UITest.Queries;
+﻿using Xamarin.UITest;
 
-namespace SomeWhat.UITests
+namespace SommeWhat.UITests
 {
 	public class AppInitializer
 	{
