@@ -1,5 +1,8 @@
 ﻿using SommeWhat.Views;
 using Xamarin.Forms;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 namespace SommeWhat
 {
@@ -17,7 +20,9 @@ namespace SommeWhat
 
 		public App()
 		{
-			InitializeComponent();
+            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
+
+            InitializeComponent();
 
 			MainPage = new NavigationPage(new RootPage());
 		}

@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Microsoft.Azure.Mobile;
 
 namespace SommeWhat.Droid
 {
@@ -16,7 +17,9 @@ namespace SommeWhat.Droid
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 
-			LoadApplication(new App());
+            MobileCenter.Configure("a593f4e7-5eca-4d24-ae4e-40ad4b5704de");
+
+            LoadApplication(new App());
 		}
 	}
 }

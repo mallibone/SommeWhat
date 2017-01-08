@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Microsoft.Azure.Mobile;
 using UIKit;
 
 namespace SommeWhat.iOS
@@ -15,7 +16,9 @@ namespace SommeWhat.iOS
 			Xamarin.Calabash.Start();
 #endif
 
-			LoadApplication(new App());
+            MobileCenter.Configure("f3e76c59-8869-4e92-b07b-4a72450dbd2f");
+
+            LoadApplication(new App());
 
 			return base.FinishedLaunching(app, options);
 		}
