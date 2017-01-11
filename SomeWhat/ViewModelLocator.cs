@@ -1,14 +1,20 @@
 ﻿using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
+using SommeWhat.Services;
 using SommeWhat.ViewModels;
+using SommeWhat.Utils;
 
 namespace SommeWhat
 {
-	public class ViewModelLocator
+	internal class ViewModelLocator
 	{
 		static ViewModelLocator()
 		{
 			ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+            //Services
+			SimpleIoc.Default.Register<IWineService, StubWineService>();
+
+            //ViewModels
 			SimpleIoc.Default.Register<RootViewModel>();
 		}
 

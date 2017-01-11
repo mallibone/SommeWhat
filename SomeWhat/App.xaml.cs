@@ -10,7 +10,7 @@ namespace SommeWhat
 	{
 		private static ViewModelLocator _locator;
 
-		public static ViewModelLocator Locator
+		internal static ViewModelLocator Locator
 		{
 			get
 			{
