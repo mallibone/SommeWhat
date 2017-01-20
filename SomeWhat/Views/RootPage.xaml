@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SommeWhat.Views.RootPage"
 		Title="Wine Collection">
+	<ContentPage.ToolbarItems>
+      <ToolbarItem Name="Create" Command="{Binding CreateNewScopeCommand}"></ToolbarItem>
+	</ContentPage.ToolbarItems>
 	<ListView ItemsSource="{Binding Wines}">
 		<ListView.ItemTemplate>
 			<DataTemplate>
