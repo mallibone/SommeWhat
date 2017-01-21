@@ -3,7 +3,7 @@
              x:Class="SommeWhat.Views.RootPage"
 		Title="Wine Collection">
 	<ContentPage.ToolbarItems>
-      <ToolbarItem Name="Create" Command="{Binding CreateNewScopeCommand}"></ToolbarItem>
+      <ToolbarItem Name="+" Command="{Binding CreateNewScopeCommand}"></ToolbarItem>
 	</ContentPage.ToolbarItems>
 	<ListView ItemsSource="{Binding Wines}">
 		<ListView.ItemTemplate>
