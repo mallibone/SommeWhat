@@ -32,9 +32,4 @@ namespace SommeWhat.Services
             return Task.FromResult(_wines.Clone<IEnumerable<Wine>>());
         }
     }
-
-    internal interface IWineService
-    {
-        Task<IEnumerable<Wine>> GetWines();
-    }
 }
