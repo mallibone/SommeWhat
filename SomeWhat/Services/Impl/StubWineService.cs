@@ -11,7 +11,7 @@ using SommeWhat.ViewModels;
 
 namespace SommeWhat.Services
 {
-    internal class StubWineService:IWineService
+    internal class StubWineService : IWineService
     {
         private List<Wine> _wines;
 
