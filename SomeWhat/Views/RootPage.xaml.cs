@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System.Threading.Tasks;
+using SommeWhat.ViewModels;
+using Xamarin.Forms;
 
 namespace SommeWhat.Views
 {
@@ -8,7 +10,15 @@ namespace SommeWhat.Views
 		{
 			InitializeComponent();
 
-			BindingContext = App.Locator.RootViewModel;
+		    BindingContext = viewModel;
 		}
+
+        private RootViewModel viewModel => App.Locator.RootViewModel;
+
+	    protected override async void OnAppearing()
+	    {
+	        base.OnAppearing();
+	        await viewModel.Initialise();
+	    }
 	}
 }
